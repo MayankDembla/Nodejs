@@ -1,10 +1,6 @@
-var calc = require('./cal.js')
+var fs = require('fs')
 
 
-result = calc.add(4,5) ; 
-
-console.log("The Output is " + result )
-
-result = calc.sub(9,4) ; 
-
-console.log("The output is " + result)
+fs.readFile('cal.js','utf8',function( err, data){
+    console.log(data)
+})
