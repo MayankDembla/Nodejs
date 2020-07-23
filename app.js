@@ -1,10 +1,10 @@
+var calc = require('./cal.js')
 
-var http = require('http')
 
-http.createServer(function(req,res){
+result = calc.add(4,5) ; 
 
-   res.writeHead(200,{'Content-Type': 'text/html'}) 
-   res.write("Welcome Back Aliens !!") ; 
-   res.end();
+console.log("The Output is " + result )
 
-}).listen(8081) ; 
+result = calc.sub(9,4) ; 
+
+console.log("The output is " + result)
